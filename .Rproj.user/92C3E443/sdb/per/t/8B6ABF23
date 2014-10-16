@@ -1,0 +1,16 @@
+{
+    "contents" : "############################################\n##\n##\n#\n#\n#\n#\n#\n#\n#\n\n\n\n\nqqplotGG <- function(y, distribution=qnorm) {\n  require(ggplot2)\n  x <- distribution(ppoints(y))\n  d <- data.frame(x=x, y=sort(y))\n  p <- ggplot(d, aes(x=x, y=y)) +\n    geom_point(colour=\"lightblue4\") +\n    geom_line(aes(x=x, y=x),colour=\"magenta2\",size=1) +\n    xlab(\"Theoretical Quantiles\") +\n    ylab(\"Sample Quantiles\")\n  return(p)\n}\n",
+    "created" : 1408960014449.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2892304274",
+    "id" : "8B6ABF23",
+    "lastKnownWriteTime" : 1405753718,
+    "path" : "D:/RPackages/ggplotExtra/R/qqplotGG.R",
+    "project_path" : "R/qqplotGG.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

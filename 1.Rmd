@@ -1,0 +1,17 @@
+---
+title: "Course Project"
+output: 
+  html_document:
+    keep_md: true
+---
+
+Declare some global variables.
+
+```{r}
+set.seed(383838)
+library(ggplot2); 
+p <- 0.75 # partition ratio
+k <- 10 # fold number
+p
+```
+
